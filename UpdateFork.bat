@@ -8,11 +8,12 @@ If /I "%INPUT%"=="n" goto no
 
 :no
 cd %USERPROFILE%\source\repos\
-set /P githubdomain1=Enter Github URL or GITHUB Upstream repo(UPSTREAM)(ie https://github.com/{Account}/{Repo}):
+set /P githubdomain1=Enter Github URL or GITHUB FORK repo(FORK)(ie https://github.com/{Account}/{Repo}):
 git clone %githubdomain1%.git
 set /P reponame=Enter Repo Name you want to update: 
 cd %USERPROFILE%\source\repos\%reponame%
-git remote add upstream %githubdomain1%
+set /P githubdomain2=Enter Github URL or GITHUB Upstream repo(UPSTREAM)(ie https://github.com/{Account}/{Repo}):
+git remote add upstream %githubdomain2%
 git remote -v
 git fetch upstream
 git remote -v
