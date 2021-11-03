@@ -19,8 +19,8 @@ git fetch upstream
 git remote -v
 git checkout master
 git merge upstream/master
-git push 
 git pull
+git push
 cd %USERPROFILE%\source\repos
 goto end
 

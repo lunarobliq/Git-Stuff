@@ -22,7 +22,7 @@ set /P submodulename=Enter what you want to call submodule:
 dir %USERPROFILE%\source\repos\
 set /P reponame=Enter Repo name to add submodule to: 
 cd %USERPROFILE%\source\repos\%reponame%
-git submodule add %githubdomain% %submodulename%
+git submodule add --force %githubdomain% %submodulename%
 git submodule update --init --recursive
 git add .
 git commit -m "Add submodule"
