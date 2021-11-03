@@ -1,3 +1,4 @@
+@ECHO OFF
 cd %USERPROFILE%\source\repos\
 DIR %USERPROFILE%\source\repos
 set /P reponame=Enter REPO you want to update: 
