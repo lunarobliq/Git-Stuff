@@ -8,7 +8,7 @@ cd $CUR_DIR
 
 for i in $(ls -la | cut -c 48-); do
     echo "";
-    echo "[+]	Working Dir = "+$i;
+    echo "[+]	Working Dir = "$i;
     echo "";
 	
     cd $i;
